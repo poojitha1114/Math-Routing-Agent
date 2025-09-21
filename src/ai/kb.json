@@ -1,0 +1,40 @@
+{
+    "entries": [
+        {
+            "id": "linear-001",
+            "topic": "Linear Equations",
+            "difficulty": "easy",
+            "question": "Solve 3x - 7 = 11",
+            "keywords": ["solve", "linear", "equation", "3x-7=11"],
+            "solution": "Step 1: Add 7 to both sides.\n3x - 7 + 7 = 11 + 7\n3x = 18\n\nStep 2: Divide both sides by 3.\n3x / 3 = 18 / 3\nx = 6\n\nFinal Answer: x = 6",
+            "verified": true
+        },
+        {
+            "id": "algebra-001",
+            "topic": "Algebra",
+            "difficulty": "easy",
+            "question": "what is 2 + 2",
+            "keywords": ["what", "is", "2+2", "add", "sum"],
+            "solution": "Step 1: Add the two numbers together.\n2 + 2 = 4\n\nFinal Answer: 4",
+            "verified": true
+        },
+        {
+            "id": "algebra-002",
+            "topic": "Algebra",
+            "difficulty": "medium",
+            "question": "Solve for y: 2y + 5 = 15",
+            "keywords": ["solve", "y", "2y+5=15", "equation"],
+            "solution": "Step 1: Subtract 5 from both sides of the equation.\n2y + 5 - 5 = 15 - 5\n2y = 10\n\nStep 2: Divide both sides by 2 to isolate y.\ny = 10 / 2\ny = 5\n\nFinal Answer: y = 5",
+            "verified": false
+        },
+        {
+            "id": "quadratic-001",
+            "topic": "Quadratic Equations",
+            "difficulty": "medium",
+            "question": "How do I solve 2x^2 + 5x - 3 = 0?",
+            "keywords": ["solve", "quadratic", "equation", "2x^2+5x-3=0"],
+            "solution": "Step 1: Use the quadratic formula x = [-b ± sqrt(b^2-4ac)] / 2a.\nFor this equation, a=2, b=5, c=-3.\n\nStep 2: Substitute the values into the formula.\nx = [-5 ± sqrt(5^2 - 4*2*(-3))] / (2*2)\nx = [-5 ± sqrt(25 + 24)] / 4\nx = [-5 ± sqrt(49)] / 4\nx = [-5 ± 7] / 4\n\nStep 3: Calculate the two possible solutions.\nx1 = (-5 + 7) / 4 = 2/4 = 0.5\nx2 = (-5 - 7) / 4 = -12/4 = -3\n\nFinal Answer: x = 0.5 and x = -3",
+            "verified": true
+        }
+    ]
+}
