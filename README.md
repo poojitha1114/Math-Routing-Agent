@@ -60,37 +60,45 @@ The application has a modular architecture designed for scalability:
 ```bash
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
+ ```
 
-2. Set Up Environment Variables
+### 2. Set Up Environment Variables
+
+```bash
 cp .env.example .env.local
-
+```
 
 Edit .env.local and fill in required values like your Google AI API key, Tavily API key, and embedding service URL.
 
-3. Install Dependencies
+ ### 3. Install Dependencies
+
+ ``` bash
 pnpm install          # Node.js dependencies
 pip install -r src/ai/tools/requirements.txt  # Python dependencies
+ ```
 
-4. Run the Embedding Service
+### 4. Run the Embedding Service
+
+ ``` bash
 uvicorn src.ai.tools.embed_service:app --host 0.0.0.0 --port 8000
+ ```
 
-5. Run the Main Application
+### 5. Run the Main Application
 
-In a new terminal:
-
+ ``` bash
 pnpm dev
-
+ ```
 
 Visit http://localhost:3000
  to access MathMind AI.
 
-🔬 Benchmarking
+## 🔬 Benchmarking
 
 Evaluate the AI's performance against a dataset of math questions:
 
 pnpm tsx src/ai/benchmark/run-benchmark.ts
 
-🤝 Contributing
+## 🤝 Contributing
 
 Contributions are welcome! To contribute:
 
@@ -115,7 +123,7 @@ git push origin feature/your-feature-name
 
 Open a Pull Request.
 
-📄 License
+## 📄 License
 
 This project is licensed under the MIT License. See the LICENSE
  file for details.
