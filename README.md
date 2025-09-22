@@ -1,7 +1,5 @@
 # MathMind AI
 
-![MathMind AI Logo](https://raw.githubusercontent.com/your-username/your-repo/main/public/logo.svg) <!-- Replace with your actual logo path if you have one -->
-
 **MathMind AI** is an intelligent, step-by-step math problem solver designed to demystify mathematics. It uses a powerful Retrieval-Augmented Generation (RAG) architecture to provide accurate, context-aware solutions by leveraging both a pre-existing knowledge base and real-time web search.
 
 ---
