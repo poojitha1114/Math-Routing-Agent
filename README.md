@@ -106,12 +106,15 @@ This project is licensed under the MIT License. See the LICENSE
 **Suggested .env.example:**
 
 Google AI API Key for Gemini model
+
 GOOGLE_API_KEY="YOUR_GOOGLE_API_KEY"
 
 Tavily API Key for Web Search Tool
+
 TAVILY_API_KEY="YOUR_TAVILY_API_KEY"
 
 URL for the self-hosted embedding service
+
 EMBEDDING_SERVICE_URL="http://127.0.0.1:8000"
 
 
