@@ -98,50 +98,21 @@ Evaluate the AI's performance against a dataset of math questions:
 
 pnpm tsx src/ai/benchmark/run-benchmark.ts
 
-## 🤝 Contributing
-
-Contributions are welcome! To contribute:
-
-Fork the repository.
-
-Create a new branch:
-
-git checkout -b feature/your-feature-name
-
-
-Make your changes.
-
-Commit changes:
-
-git commit -m "Add some feature"
-
-
-Push to the branch:
-
-git push origin feature/your-feature-name
-
-
-Open a Pull Request.
-
 ## 📄 License
 
 This project is licensed under the MIT License. See the LICENSE
  file for details.
 
 Suggested .env.example
-# Google AI API Key for Gemini model
+Google AI API Key for Gemini model
 GOOGLE_API_KEY="YOUR_GOOGLE_API_KEY"
 
-# Tavily API Key for Web Search Tool
+Tavily API Key for Web Search Tool
 TAVILY_API_KEY="YOUR_TAVILY_API_KEY"
 
-# URL for the self-hosted embedding service
+URL for the self-hosted embedding service
 EMBEDDING_SERVICE_URL="http://127.0.0.1:8000"
 
 
 Copy .env.example to .env.local and fill in your secrets. Do not commit .env.local.
 
-
-If you want, I can also **add a “Screenshots & Demo” section with example UI images and usage GIFs** to make your GitHub README look super professional.  
-
-Do you want me to do that next?
