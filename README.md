@@ -109,13 +109,19 @@ Google AI API Key for Gemini model
 
 GOOGLE_API_KEY="YOUR_GOOGLE_API_KEY"
 
+
+
 Tavily API Key for Web Search Tool
 
 TAVILY_API_KEY="YOUR_TAVILY_API_KEY"
 
+
+
 URL for the self-hosted embedding service
 
 EMBEDDING_SERVICE_URL="http://127.0.0.1:8000"
+
+
 
 
 Copy .env.example to .env.local and fill in your secrets. Do not commit .env.local.
