@@ -61,37 +61,79 @@ The application has a modular architecture designed for scalability:
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
 
-#### 2. Set Up Environment Variables
-
-# Copy the example environment file to create your own local .env file
+2. Set Up Environment Variables
 cp .env.example .env.local
 
-# Open .env.local and fill in the required values:
-# GOOGLE_API_KEY="Your Google AI API Key"
-# TAVILY_API_KEY="Your Tavily Web Search API Key"
-# EMBEDDING_SERVICE_URL="http://127.0.0.1:8000"
 
-### 3. Install Dependencies
+Edit .env.local and fill in required values like your Google AI API key, Tavily API key, and embedding service URL.
 
-```bash
-# Install Node.js dependencies
-pnpm install
+3. Install Dependencies
+pnpm install          # Node.js dependencies
+pip install -r src/ai/tools/requirements.txt  # Python dependencies
 
-# Install Python dependencies for the embedding service
-pip install -r src/ai/tools/requirements.txt
-
-### # Install Node.js dependencies
-pnpm install
-
-# Install Python dependencies for the embedding service
-pip install -r src/ai/tools/requirements.txt
-
-### 4. Run the Embedding Service
-```bash
-# Start the FastAPI embedding service
+4. Run the Embedding Service
 uvicorn src.ai.tools.embed_service:app --host 0.0.0.0 --port 8000
-Keep this terminal running. This service is required for the AI core to function.
 
-### 5. Run the Main Application
-# In a new terminal, start the Next.js development server
+5. Run the Main Application
+
+In a new terminal:
+
 pnpm dev
+
+
+Visit http://localhost:3000
+ to access MathMind AI.
+
+🔬 Benchmarking
+
+Evaluate the AI's performance against a dataset of math questions:
+
+pnpm tsx src/ai/benchmark/run-benchmark.ts
+
+🤝 Contributing
+
+Contributions are welcome! To contribute:
+
+Fork the repository.
+
+Create a new branch:
+
+git checkout -b feature/your-feature-name
+
+
+Make your changes.
+
+Commit changes:
+
+git commit -m "Add some feature"
+
+
+Push to the branch:
+
+git push origin feature/your-feature-name
+
+
+Open a Pull Request.
+
+📄 License
+
+This project is licensed under the MIT License. See the LICENSE
+ file for details.
+
+Suggested .env.example
+# Google AI API Key for Gemini model
+GOOGLE_API_KEY="YOUR_GOOGLE_API_KEY"
+
+# Tavily API Key for Web Search Tool
+TAVILY_API_KEY="YOUR_TAVILY_API_KEY"
+
+# URL for the self-hosted embedding service
+EMBEDDING_SERVICE_URL="http://127.0.0.1:8000"
+
+
+Copy .env.example to .env.local and fill in your secrets. Do not commit .env.local.
+
+
+If you want, I can also **add a “Screenshots & Demo” section with example UI images and usage GIFs** to make your GitHub README look super professional.  
+
+Do you want me to do that next?
