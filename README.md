@@ -101,9 +101,9 @@ pnpm tsx src/ai/benchmark/run-benchmark.ts
 This project is licensed under the MIT License. See the LICENSE
  file for details.
 
-##🔧 Environment Variables
+## 🔧 Environment Variables
 
-Suggested .env.example:
+**Suggested .env.example:**
 
 Google AI API Key for Gemini model
 GOOGLE_API_KEY="YOUR_GOOGLE_API_KEY"
